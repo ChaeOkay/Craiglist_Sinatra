@@ -1,3 +1,9 @@
 <div>
   <h3>Housing</h3>
+  <% unless @categories.nil? %>
+    <ul>
+    <% @categories.each do |c| %>
+      <li><a href='#' ><%= c.description %></a></li>
+    <% end %>
+  <% end %>
 </div>

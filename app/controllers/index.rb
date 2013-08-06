@@ -5,6 +5,7 @@ end
 
 #action index - displays all categories
 get '/categories' do
+  @categories = Category.all
   erb :index
 end
 
