@@ -46,6 +46,8 @@ post '/categories/:category/posts/new' do
   redirect "/categories/#{category.id}"
 end
 
-get '/categories/posts/:post_id/:key' do
-
+#updates a specific post
+put '/categories/posts/:post_id/:key' do
+  #create authentication - does the key match?
+  erb :update_post
 end
