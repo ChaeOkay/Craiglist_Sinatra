@@ -1,0 +1,31 @@
+<div>
+  <h3>Housing < <%= @category %> < New Posting</h3>
+  <form name="post" action="/categories/<%= @category %>/posts/new" method="post">
+    <label>Title:</label>
+    <br />
+    <input type="text" name="title">
+    <br />
+    <br />
+    <label>Rent:</label>
+    <br />
+    <input type="text" name="rent">
+    <br />
+    <br />
+    <label>Area:</label>
+    <br />
+    <input type="text" name="area">
+    <br />
+    <br />
+    <label>Description:</label>
+    <br />
+    <textarea name="description"></textarea>
+    <br />
+    <br />
+    <label>Email:</label>
+    <br />
+    <input type="text" name="email">
+    <br />
+    <br />
+    <input type="submit" value="Submit">
+  </form>
+</div>

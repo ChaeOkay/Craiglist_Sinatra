@@ -1,5 +1,6 @@
 <div>
   <h3>Housing < <%= @category %></h3>
+  <p><a href='/categories/<%= @category %>/posts/new'>Create new Post</a></p>
   <% unless @posts.nil? %>
       <% @posts.each do |post| %>
         <li><a href='/categories/posts/<%=post.id%>' ><%= post.description %></a></li>
