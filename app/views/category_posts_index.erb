@@ -1,8 +1,0 @@
-<div>
-  <h3>Housing < <%= @category %></h3>
-  <% unless @posts.nil? %>
-      <% @posts.each do |post| %>
-        <li><a href='/categories/posts/<%=post.id%>' ><%= post.description %></a></li>
-      <% end %>
-    <% end %>
-</div>
