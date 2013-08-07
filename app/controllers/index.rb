@@ -11,7 +11,7 @@ get '/categories' do
 end
 
 #action index - displays all posts within a category
-get '/categories/:posts' do
-  p @posts = params[:posts]
+get '/categories/:category_id' do
+  @category = Category.find(params[:category_id]).description
   erb :category_posts_index
 end
