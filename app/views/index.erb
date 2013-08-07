@@ -1,9 +1,12 @@
 <div>
   <h3>Housing</h3>
   <% unless @categories.nil? %>
-    <ul>
+    <form name="categories" action='/categories/:posts' method="get">
     <% @categories.each do |c| %>
-      <li><a href='#' ><%= c.description %></a></li>
+      <input type = "radio" name="categories" value="<%= c.description %>"><%= c.description %></input>
+      <br />
     <% end %>
+    <input type="submit" action='/' method="get">
+    </form>
   <% end %>
 </div>
