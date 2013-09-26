@@ -1,4 +1,4 @@
-==Craigstlist Jr
+#Craigstlist Jr
 
 We're going to build a simple version of Craigslist. This will be your first web application that uses multiple models.
 
@@ -43,9 +43,9 @@ Our controller structure will be more complicated. We'll want URLs that look lik
 
 To create a new Post, for example, we'd want to submit an HTML form using the POST http method to the /posts URL, like so:
 
-<form action="/posts" method="post">
-  <!-- other form elements here -->
-</form>
+        <form action="/posts" method="post">
+          <!-- other form elements here -->
+        </form>
 and to update an existing record (say with id 1234) we'd want to post to /posts/1234.
 
 Controllers should either redirect to another URL or render a page. Typically, a page loaded via HTTP POST will redirect to an appropriate URL if a request succeeds and render an error page, otherwise.
