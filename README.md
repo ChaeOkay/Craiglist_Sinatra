@@ -27,17 +27,6 @@ A page that lets someone create a new posting in a given category
 A page that lets someone who has created a page return to edit/update the page
 If you're never used Craigslist, it doesn't have any kind of user authentication. Instead, when someone creates a post they're given a special "secret" URL that grants them powers to edit that post that looks like
 
-http://craigslist.com/post/123/edit?key=kjansd812
-The key is randomly generated. The person is given their "edit URL" after they successfully create a post. Anyone with this URL can edit the post.
-
-Think about this like a real web application you might want someone to use. What fields should a Post have?
-
-A price, probably. What should the column type of a money-related column be?
-
-An email, so the poster could be contacted. Title, description, etc.
-
-Spend time enumerating the pages, deciding what should be displayed on each one.
-
 ##Controller Structure
 Our controller structure will be more complicated. We'll want URLs that look like /categories/123 and /posts/456. We'll be using both get and post methods.
 
@@ -49,18 +38,3 @@ To create a new Post, for example, we'd want to submit an HTML form using the PO
 and to update an existing record (say with id 1234) we'd want to post to /posts/1234.
 
 Controllers should either redirect to another URL or render a page. Typically, a page loaded via HTTP POST will redirect to an appropriate URL if a request succeeds and render an error page, otherwise.
-
-##Ship it!
-Make sure the core features work. We should be able to download your app, run it, and do the follow:
-
-Choose a category to browse
-View all postings in a particular category
-View a particular posting
-Create my own posting
-Edit my postings by using the "secret key" that I get after creating my posting
-Add One Final Feature
-One last feature to add: the "this is awesome" feature. What does awesome mean? It can mean anything. The code is awesome, there are new awesome features, the design is awesome.
-
-We'll be picking one pair at random tomorrow morning to show off their version of Craigslist. They'll get a full-on UX and code review.
-
-This isn't a race; there's no finish line, only a deadline (tomorrow, duh!). Take the time to make this application something you're proud of. It doesn't have to be flashy — it could be a difficult technical hurdle you overcame.
