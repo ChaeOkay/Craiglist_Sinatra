@@ -1,4 +1,11 @@
-#Craigstlist Jr
+    $ git clone https://github.com/ChaeOkay/Craiglist_Sinatra
+    $ cd Craiglist_Sinatra
+    $ rake db:create; rake db:migrate; rake db:seed
+    $ shotgun
+open `localhost:9393` in your favorite browser.
+
+
+#Craigslist Jr
 
 We're going to build a simple version of Craigslist. This will be your first web application that uses multiple models.
 
